@@ -2,7 +2,7 @@ import imageio
 import numpy as np
 import matplotlib.pyplot as plt
 #Read image
-rgb_image = imageio.imread(r'C:\Users\Rahul\Documents\UFL\Courses\MIS\Homework3\hendrix_final.png');
+rgb_image = imageio.imread('C:***.png');
 rgb_image = rgb_image.astype(np.float64);
 #Store SVD result of each channel
 ur,sr,hr = np.linalg.svd(rgb_image[:,:,0])
@@ -46,4 +46,4 @@ reconstimg[:,:,1] = reconstimgG
 reconstimg[:,:,2] = reconstimgB
 
 #Write image to disk
-imageio.imwrite(r"C:\Users\Rahul\Documents\UFL\Courses\MIS\Homework3"+"\image50 0.jpg",reconstimg)
+imageio.imwrite("***.jpg",reconstimg)
